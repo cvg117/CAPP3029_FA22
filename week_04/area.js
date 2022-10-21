@@ -50,4 +50,16 @@ d3.csv('long-term-interest-monthly.csv').then(data => {
       .attr("transform", "rotate(-90)")
       .text("Interest rate");
     
+    let area = d3.area()
+        .x(d => x(d.Date))
+        .y0(y(0))
+        .y1(d => y(d.Value))
+    
+    svg.append("path")
+        .datum(data)
+        .attr("d", area)
+        .attr("fill", "darkolivegreen")
+        .attr("stroke", "darkolivegreen")
+        .attr("opacity", .8);
+
   });
