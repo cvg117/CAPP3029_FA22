@@ -55,7 +55,7 @@ d3.csv('data.csv').then((data) => {
       .selectAll("path")
       .data(arcs)
       .join("path")
-      .attr("fill", (d, i) => d3.schemeCategory10[i])
+      .attr("fill", (d, i) => d3.schemeCategory10[i+1])
       .attr("d", arc);
 
     svg.append("g")
@@ -72,13 +72,5 @@ d3.csv('data.csv').then((data) => {
       .attr("x", 0)
       .attr("y", (d, i) => `${i * 1.1}em`)
       .text(d => d);
-
-    // svg.append("text")
-    //   .attr("font-size", 30)
-    //   .attr("font-weight", "bold")
-    //   .attr("text-anchor", "middle")
-    //   .attr("alignment-baseline", "middle")
-    //   .text("2022")
-    //   .style("font-size", 20);
   
   });
