@@ -1,0 +1,127 @@
+[
+    {
+      "street": "Clark",
+      "values": [
+        {
+          "category": "Right of Way",
+          "amount": 82
+        },
+        {
+          "category": "Turn Signal",
+          "amount": 17
+        },
+        {
+          "category": "Passing",
+          "amount": 11
+        },
+        {
+          "category": "Lane Use",
+          "amount": 10
+        },
+        {
+          "category": "Other",
+          "amount": 48
+        }
+      ]
+    },
+    {
+        "street": "Western",
+        "values": [
+          {
+            "category": "Right of Way",
+            "amount": 42
+          },
+          {
+            "category": "Other",
+            "amount": 30
+          },
+          {
+              "category": "Speed",
+              "amount": 8
+            },
+            {
+              "category": "Ran Signal",
+              "amount": 8
+            },
+            {
+              "category": "Spacing",
+              "amount": 6
+            }
+        ]
+    },
+    {
+        "street": "Damen",
+        "values": [
+          {
+            "category": "Right of Way",
+            "amount": 64
+          },
+          {
+            "category": "Turn Signal",
+            "amount": 8
+          },
+          {
+            "category": "Other",
+            "amount": 53
+          },
+            {
+              "category": "Driver Skill",
+              "amount": 8
+            },
+            {
+              "category": "Ran Sign",
+              "amount": 7
+            }
+        ]
+    },
+    {
+        "street": "Milwaukee",
+        "values": [
+          {
+            "category": "Right of Way",
+            "amount": 127
+          },
+          {
+            "category": "Turn Signal",
+            "amount": 21
+          },
+          {
+            "category": "Passing",
+            "amount": 10
+          },
+          {
+            "category": "Other",
+            "amount": 61
+          },
+            {
+              "category": "Driver Skill",
+              "amount": 15
+            }
+        ]
+    },
+    {
+        "street": "Halsted",
+        "values": [
+          {
+            "category": "Right of Way",
+            "amount": 101
+          },
+          {
+            "category": "Turn Signal",
+            "amount": 14
+          },
+          {
+            "category": "Lane Use",
+            "amount": 13
+          },
+          {
+            "category": "Other",
+            "amount": 76
+          },
+            {
+              "category": "Driver Skill",
+              "amount": 16
+            }
+        ]
+    }
+]

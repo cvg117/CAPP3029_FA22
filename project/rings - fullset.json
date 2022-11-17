@@ -1,0 +1,227 @@
+[
+    {
+      "street": "Clark",
+      "values": [
+        {
+          "category": "FAILING TO YIELD RIGHT-OF-WAY",
+          "amount": 82
+        },
+        {
+          "category": "IMPROPER TURNING/NO SIGNAL",
+          "amount": 17
+        },
+        {
+          "category": "IMPROPER OVERTAKING/PASSING",
+          "amount": 11
+        },
+        {
+          "category": "IMPROPER LANE USAGE",
+          "amount": 10
+        },
+        {
+          "category": "OTHER",
+          "amount": 48
+        },
+        {
+            "category": "FAILING TO REDUCE SPEED TO AVOID CRASH",
+            "amount": 0
+          },
+          {
+            "category": "DISREGARDING TRAFFIC SIGNALS",
+            "amount": 0
+          },
+          {
+            "category": "FOLLOWING TOO CLOSELY",
+            "amount": 0
+          },
+          {
+            "category": "DRIVING SKILLS/KNOWLEDGE/EXPERIENCE",
+            "amount": 0
+          },
+          {
+            "category": "DISREGARDING STOP SIGN",
+            "amount": 0
+          }
+      ]
+    },
+    {
+        "street": "Western",
+        "values": [
+          {
+            "category": "FAILING TO YIELD RIGHT-OF-WAY",
+            "amount": 42
+          },
+          {
+            "category": "IMPROPER TURNING/NO SIGNAL",
+            "amount": 0
+          },
+          {
+            "category": "IMPROPER OVERTAKING/PASSING",
+            "amount": 0
+          },
+          {
+            "category": "IMPROPER LANE USAGE",
+            "amount": 0
+          },
+          {
+            "category": "OTHER",
+            "amount": 30
+          },
+          {
+              "category": "FAILING TO REDUCE SPEED TO AVOID CRASH",
+              "amount": 8
+            },
+            {
+              "category": "DISREGARDING TRAFFIC SIGNALS",
+              "amount": 8
+            },
+            {
+              "category": "FOLLOWING TOO CLOSELY",
+              "amount": 6
+            },
+            {
+              "category": "DRIVING SKILLS/KNOWLEDGE/EXPERIENCE",
+              "amount": 0
+            },
+            {
+              "category": "DISREGARDING STOP SIGN",
+              "amount": 0
+            }
+        ]
+    },
+    {
+        "street": "Damen",
+        "values": [
+          {
+            "category": "FAILING TO YIELD RIGHT-OF-WAY",
+            "amount": 64
+          },
+          {
+            "category": "IMPROPER TURNING/NO SIGNAL",
+            "amount": 8
+          },
+          {
+            "category": "IMPROPER OVERTAKING/PASSING",
+            "amount": 0
+          },
+          {
+            "category": "IMPROPER LANE USAGE",
+            "amount": 0
+          },
+          {
+            "category": "OTHER",
+            "amount": 53
+          },
+          {
+              "category": "FAILING TO REDUCE SPEED TO AVOID CRASH",
+              "amount": 0
+            },
+            {
+              "category": "DISREGARDING TRAFFIC SIGNALS",
+              "amount": 0
+            },
+            {
+              "category": "FOLLOWING TOO CLOSELY",
+              "amount": 0
+            },
+            {
+              "category": "DRIVING SKILLS/KNOWLEDGE/EXPERIENCE",
+              "amount": 8
+            },
+            {
+              "category": "DISREGARDING STOP SIGN",
+              "amount": 7
+            }
+        ]
+    },
+    {
+        "street": "Milwaukee",
+        "values": [
+          {
+            "category": "FAILING TO YIELD RIGHT-OF-WAY",
+            "amount": 127
+          },
+          {
+            "category": "IMPROPER TURNING/NO SIGNAL",
+            "amount": 21
+          },
+          {
+            "category": "IMPROPER OVERTAKING/PASSING",
+            "amount": 10
+          },
+          {
+            "category": "IMPROPER LANE USAGE",
+            "amount": 0
+          },
+          {
+            "category": "OTHER",
+            "amount": 61
+          },
+          {
+              "category": "FAILING TO REDUCE SPEED TO AVOID CRASH",
+              "amount": 0
+            },
+            {
+              "category": "DISREGARDING TRAFFIC SIGNALS",
+              "amount": 0
+            },
+            {
+              "category": "FOLLOWING TOO CLOSELY",
+              "amount": 0
+            },
+            {
+              "category": "DRIVING SKILLS/KNOWLEDGE/EXPERIENCE",
+              "amount": 15
+            },
+            {
+              "category": "DISREGARDING STOP SIGN",
+              "amount": 0
+            }
+        ]
+    },
+    {
+        "street": "Halsted",
+        "values": [
+          {
+            "category": "FAILING TO YIELD RIGHT-OF-WAY",
+            "amount": 101
+          },
+          {
+            "category": "IMPROPER TURNING/NO SIGNAL",
+            "amount": 14
+          },
+          {
+            "category": "IMPROPER OVERTAKING/PASSING",
+            "amount": 0
+          },
+          {
+            "category": "IMPROPER LANE USAGE",
+            "amount": 13
+          },
+          {
+            "category": "OTHER",
+            "amount": 76
+          },
+          {
+              "category": "FAILING TO REDUCE SPEED TO AVOID CRASH",
+              "amount": 0
+            },
+            {
+              "category": "DISREGARDING TRAFFIC SIGNALS",
+              "amount": 0
+            },
+            {
+              "category": "FOLLOWING TOO CLOSELY",
+              "amount": 0
+            },
+            {
+              "category": "DRIVING SKILLS/KNOWLEDGE/EXPERIENCE",
+              "amount": 16
+            },
+            {
+              "category": "DISREGARDING STOP SIGN",
+              "amount": 0
+            }
+        ]
+    }
+]
