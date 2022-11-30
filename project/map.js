@@ -15,6 +15,7 @@ Promise.all([
   d3.json("map_data.json"),
   d3.json("chicago.json")
 ]).then(([data, chicagoTopology]) => {
+  console.log(chicagoTopology)
 
   const communities = topojson.feature(chicagoTopology, chicagoTopology.objects.chicago);
   const mesh = topojson.mesh(chicagoTopology, chicagoTopology.objects.chicago);
@@ -28,20 +29,18 @@ Promise.all([
     .selectAll("path")
     .data(communities.features)
     .join("path")
-    .attr("stroke", '#ccc')
-    .attr("fill", "#efefef")
+    .attr("stroke", "#121212")
+    .attr("fill", "#fefefe")
     .attr("d", path)
-  console.log("data", data)
-  svg.append("g")
+
+    svg.append("g")
     .selectAll("circle")
     .data(data)
     .join("circle")
     .attr("stroke", '#ccc')
-    .attr("fill", "brown")
-    .attr("opacity", 0.75)
+    .attr("fill", "#e41a1c")
+    .attr("opacity", 0.8)
     .attr("r", d => (d.SEVERITY))
-    //  .attr("r", 8) // if a marker, you can use a static value
-    // .attr("transform", d => `translate(${path.centroid(d)})`) // replaced by next two lines
     .attr("cx", d => projection(d.LOCATION)[0]) // uses projection and returns long
     .attr("cy", d => projection(d.LOCATION)[1]) // uses projection and returns lat
     .on("mousemove", function (event, d) {
@@ -58,6 +57,3 @@ Promise.all([
       d3.select(this).attr("fill", 'brown');
     });
 });
-
-//   <br>Population: ${d.population}
-//   <br>Crime/1000: ${d.crimeDensity.toFixed(2)}`)

@@ -1,0 +1,99 @@
+[
+    {
+        "street": "Milwaukee",
+        "amount":402,
+        "values": 
+        [
+            {
+                "category":"Driver Error",
+                "amount": 172
+            },
+            {
+                "category":"Undetermined",
+                "amount": 214
+            },
+            {
+                "category":"Environmental",
+                "amount": 16
+            }
+        ]
+    },
+    {
+        "street": "Halsted",
+        "amount": 381,
+        "values": 
+        [
+            {
+                "category":"Driver Error",
+                "amount": 210
+            },
+            {
+                "category":"Undetermined",
+                "amount": 161
+            },
+            {
+                "category":"Environmental",
+                "amount": 10
+            }
+        ]
+    },
+    {
+        "street": "Clark",
+        "amount": 316,
+        "values": 
+        [
+            {
+                "category":"Driver Error",
+                "amount": 160
+            },
+            {
+                "category":"Undetermined",
+                "amount": 148
+            },
+            {
+                "category":"Environmental",
+                "amount": 8
+            }
+        ]    
+    },
+    
+    {
+        "street": "Damen",
+        "amount":239,
+        "values": 
+        [
+            {
+                "category":"Driver Error",
+                "amount": 130
+            },
+            {
+                "category":"Undetermined",
+                "amount": 99
+            },
+            {
+                "category":"Environmental",
+                "amount": 10
+            }
+        ]
+    },
+    {
+        "street": "Western",
+        "amount": 169,
+        "values": 
+        [
+            {
+                "category":"Driver Error",
+                "amount": 87
+            },
+            {
+                "category":"Undetermined",
+                "amount": 75
+            },
+            {
+                "category":"Environmental",
+                "amount": 7
+            }
+        ]
+    }
+    
+]

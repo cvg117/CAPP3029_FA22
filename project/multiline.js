@@ -8,7 +8,7 @@ let height = 500,
     .append("svg")
     .attr("viewBox", [0, 0, width, height]);
 
-    d3.csv("multiline_data.csv").then(data => {
+    d3.csv("multiline_data_v2.csv").then(data => {
     
     let parser = d3.timeParse("%b");
 
@@ -33,9 +33,12 @@ let height = 500,
         .domain(d3.extent(data, d => d.avg_sev))
         .range([height - margin.bottom, margin.top]);
 
+
+    const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     svg.append("g")
         .attr("transform", `translate(0,${height - margin.bottom})`)
-        .call(d3.axisBottom(x));
+        .call(d3.axisBottom(x)
+        .tickFormat(d => monthNames[d.getMonth()]));
 
     svg.append("g")
         .attr("transform", `translate(${margin.left},0)`)
@@ -44,14 +47,14 @@ let height = 500,
     svg.append("g")
         .attr("transform", `translate(${width - margin.right},0)`)
         .call(d3.axisRight(y2).tickFormat(d => d));
-
-    let colors = ["#e41a1c", "#984ea3"];
-    let pos = [[[400,70],[550,430]],[[350,420],[600,30]]]
+        
+    let colors = ["#1b9e77","#d95f02","#7570b3"];
+    let pos = [[[400,120],[550,400]],[[220,410],[655,30]], [[60,35],[675,400]]]
     let i = 0;
 
     for (let vic of victims) {
         let vicData = data.filter(d => d.victim === vic);
-
+        console.log(vicData)
         buildLine(vicData, "avg_sev", y2, colors[i], vic, pos[i][0], "Severity");
         buildLine(vicData, "count", y1, colors[i], vic, pos[i][1], 'Count');
 
@@ -79,7 +82,7 @@ let height = 500,
         .attr("fill", "none")
         .attr("stroke", color)
         .attr("d", line)
-        .style("stroke-width", 3.5)
+        .style("stroke-width", 2.5)
 
         g.append("text")
         .text(vic)
