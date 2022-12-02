@@ -34,14 +34,14 @@ Promise.all([
     .domain([0, 1, 2, 3, 4, 5, 6, 7]).nice()
     .range(scheme);
 
-  d3.select("#legend")
-    .node() 
-    .appendChild(
-        Legend( 
-            d3.scaleLinear(["0", "1", "2", "3", "4", "5", "6", "7"],
-            scheme),
-        { title: "Severity of Biker injury by Neighborhood" }
-        ));
+//   d3.select("#legend")
+//     .node() 
+//     .appendChild(
+//         Legend( 
+//             d3.scaleLinear(["0", "1", "2", "3", "4", "5", "6", "7"],
+//             scheme),
+//         { title: "Severity of Biker injury by Neighborhood" }
+//         ));
     
     svg.append("g")
     .selectAll("path")
