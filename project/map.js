@@ -78,7 +78,8 @@ Promise.all([
     .attr("opacity", 0.7)
     // .attr("r", d => (d.SEVERITY))
     .attr("r", .2)
-    .attr("cx", d => projection(d.LOCATION)[0]) // uses projection and returns long
-    .attr("cy", d => projection(d.LOCATION)[1]) // uses projection and returns lat
+    .attr("cx", d => projection(d.LOCATION)[0])
+    .attr("cy", d => projection(d.LOCATION)[1])
+    .style('pointer-events', 'none')
     
 });
