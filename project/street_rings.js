@@ -24,7 +24,7 @@ d3.json('rings_binned.json').then((data) => {
       .attr("viewBox", [-width / 2, -height / 2, width, height]);
     
     let colors = ["#a6cee3","#1f78b4","#e31a1c"]
-
+    //let swatchHTML = Swatches(d3.scaleOrdinal(data,))
     svg.append("g")
       .attr("stroke", "white")
       .attr("stroke-width", 2)
