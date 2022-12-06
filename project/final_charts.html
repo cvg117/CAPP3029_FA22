@@ -8,25 +8,13 @@
   <title>Bike Safety</title>
   <style>
     * {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Helvetica, sans-serif;
     }
     p {
     font-size: 1em;
     }
 
     a { color: #369;}
-
-    .victim { cursor: default; }
-    
-    .victim path {
-      stroke-width: 1.5;
-      opacity: 0.75;
-    }
-
-    .highlight path {
-      stroke: steelblue;
-      opacity: 1;
-    }
 
     .container { width: 1040px; margin: 0 auto; }
 
@@ -46,51 +34,139 @@
 
 <body>
   <div class="container">
-    <h1>Investigating Metro Bike Safety</h1>
+    <h1>The Daily Black Diamond: Bike Transit Dangers in Chicago </h1>
     <p>
-        An introduction to the idea
+        Cities are, by definition, compact human environments. Providing services that are constrained by 
+        distance traveled within them is extremely efficient. As we continue to grapple with human-driven climate change, 
+        it is essential that we leverage this trait to help individuals and companies reduce their carbon 
+        footprints. 
+    <br>
+    <br>
+        To take best advantage, however, requires the means of transit to be efficient. Car centered 
+        transportation systems are energy, space, and time inefficient within urban centers. 
+        Furthermore, they are dangerous. In such compact living situations, valuing car convenience and access
+        devalues not only environmental needs, but human safety. These safety concerns go beyond a barrier to entry for green, 
+        human-centered transit methods. They create a transit environment in which the lives of non-drivers are endangered with little recourse. 
+        <a href ="https://blockclubchicago.org/2022/11/29/life-and-death-in-chicagos-most-dangerous-bike-lane/">Recent
+        investigations</a> into accidents on Milwaukee Avenue cited higher than average hit and run incidents for car-on-bike accidents,
+        and vast underreporting/compensation by/for those struck.
+    <br>
+    <br>
+        This series of visualizations sheds light on these dangers. Understanding the extent and location of 
+        danger to cyclists and pedestrians reveals the amount of work to be done. Providing better protected 
+        lanes, fewer car-legal streets, and more wraparound services for human-driven commuters can
+        reduce conjoined harms to our populations and our planet.
+
     </p>
+    <div class="container">
+
+        <h3>Severe Incidents on Chicago's Spoke and Wheel</h3>
+        <p>
+            Source: <a href = "https://data.cityofchicago.org/Transportation/Traffic-Crashes-Crashes/85ca-t3if">Chicago Open Data Portal, Traffic Crashes, 2017 - 2022</a>
+        </p>
+        <div id="chart_map"></div>
+        <div id="legend"></div>
+        <p>
+            Addressing transit concerns begins at the where. In this case, the literal pain points are easily evident. Former Chicago Mayor
+            Rahm Emanuel knew this as well as anyone when he proposed his
+            <a href ="https://www.chicago.gov/content/dam/city/depts/cdot/bike/general/ChicagoStreetsforCycling2020.pdf">
+             2020 Streets for Cycling Plan</a> in 2012. The city took this effort even further with its 
+            <a href = https://visionzerochicago.org/wp-content/uploads/2018/06/VZ_HCC_FrameworkPlan_2018-06-15.pdf>Vision Zero Chicago</a> plan to 
+            reduce high crash corridors. The outcomes? Unfortunately, failure takes many forms regarding these plans. A lack of concerted funding
+            and infrastructural efforts left the city short on the vast majority of its goals. As an example, the 2012 plan promised 100 miles of
+            protected bike lanes by 2015. <a href = https://blockclubchicago.org/2021/02/01/chicagos-bike-lane-efforts-have-fallen-short-for-decades-can-lightfoot-help-the-city-catch-up/>
+            As of 2021,</a> there were almost 27 miles, accounting for under 10% of the total bike paths in the city.
+            Beyond failing to address the most most obviously dangerous zones, these plans were largely 
+            <a href =https://www.nytimes.com/2011/10/16/us/chicago-bike-plan-accused-of-neighborhood-bias.html>absent any mention</a> of
+            the South and West sides.
+        </p>
+      </div>
 
   <div class="container">
-    <h1>Chicago's Most Dangerous Streets</h1>
+    <h3>Broken Spokes: Chicago's Most Dangerous Streets</h3>
     <p>
-        Source: Chicago Open Data Portal
+        Source: <a href = "https://data.cityofchicago.org/Transportation/Traffic-Crashes-Crashes/85ca-t3if">Chicago Open Data Portal, Traffic Crashes, 2017 - 2022</a>
     </p>
     <div id="chart_ring"></div>
     <p>
-        Description of the ring charts
+        We know - and have not succeeded in addressing - the where of this issue. Another avenue to progress would be the why. What causes 
+        potentially lethal encounters between cars and bicyclists? Can we reduce those causes? In large part, it is no different 
+        from the causes of car-on-car accidents. Distracted and dangerous driving in a confined urban environment is a 
+        recipe for collision, although, it must be noted that bike behavior regarding traffic control signals is an important contributory factor.
+        Unfortunately, the general apathy towards the subject limits our understanding of even these most obvious effects. 
+        For every single explained accident on Chicago's most dangerous streets there are .97 accidents with no explanation 
+        provided by the reporting officer. This gap in qualitative informaton is exacerbated by massive underreporting caused by a 
+        lack of positive civil outcomes for bikers, according to <a href="https://www.bikelaneuprising.com/">bike safety advocates</a> 
     </p>
     </div>
 
 
   <div class="container">
 
-    <h1>Hit Count vs Hurt Count</h1>
+    <h3>Hits and Headers: Comparing Accident Counts to Damage Done</h3>
     <p>
-        Source: Chicago Open Data Portal
+        Source: <a href = "https://data.cityofchicago.org/Transportation/Traffic-Crashes-Crashes/85ca-t3if">Chicago Open Data Portal, Traffic Crashes, 2021</a>
     </p>
     <div id="chart_multiline"></div>
     <p>
-        Description of the multiline chart
+        Of course, the magnitude of a problem is not the only metric to consider in how it must be dealt with.
+        After all, significantly more car-on-car crashes occur throughout a year on Chicago's streets. Where the
+        twinned problems diverge is in the severity of these incidents. While car-on-car crashes outnumber
+         car-on-human crashes 28-1, the likelihood of serious injury in such accidents in Chicago is vanishingly small.
+        The likelihood of severe injury for pedestrians and bikers is 3 to 5 times higher when struck by a vehicle.
+    <br>
+    <br>
+        Chicago is known as a geographically large, well-blocked out, and active city. We can take better advantage of
+        these qualities to become a safer, greener, healthier city in the future by refocusing our infrastructural efforts
+        on non-car transit.
     </p>
   </div>
   
+
   <div class="container">
 
-    <h1>Severity by Location</h1>
+    <h2>Thoughts on Process</h2>
     <p>
-        Source: Chicago Open Data Portal
-    </p>
-    <div id="chart_map"></div>
-    <p>
-        Description of the map
-    </p>
-  </div>
-  <div class="container">
-
-    <h1>Thoughts on Process</h1>
-    <p>
-        Process writeup
+        On a personal level, I was driven to investigate this after I joined the data recently.
+        Over the summer, I was involved in an ugly hit and (attempted) run while biking on Clark Street. The confrontation 
+        that followed crystallized the need to protect bikers from a car culture that sees their safety as incidental to drivers' convenience.
+    <br>
+    <br>
+        Bike accidents are massively underreported in general, and in my case in specific. I am particularly concerned by what the map shows 
+        for the south and west sides. It implies that beyond normal standards of underreporting, these areas of the city are being 
+        hugely underserved and under supported for bicyclists. I would also be curious to re-do this analysis over a non-covid 
+        timeframe when there would be more activity on the streets in general.
+    <br>
+    <br>
+        I had originally hoped to compare bike safety metrics between multiple cities and involve more specific data on bike
+        lane implementations between those cities. Unfortunately, the spotiness of that data and the discrepancies in its reporting
+        between cities put that goal out of reach for this iteration. Changing course gave me the opportunity to apply lived
+        experience and personal understanding of the situation in my home city of Chicago.
+    <br>
+    <br>
+        The most critical details of my process surround the coding of severity. This was provided as a set of vague categorical options
+        that reporting officers would fill out based on their observations and victim reports. To provide stronger analysis and increase
+        its usability, I converted the four categories into a range from 0 to 1 at regular 0.25 intervals per individual report within
+        an accident. As an example, an accident could be assigned a severity score of 1 for a single fatality, or for 2 individuals with 
+        "reported and evident" injuries.
+    <br>
+    <br>
+        I was most comfortable with the sociological and analytical portions of the project and had quite a bit of trouble with the code. 
+        The cleaning and preparation steps were interesting and engaging as I worked through a rich, idiosyncratic dataset. 
+        I was able to boil down most of what I needed without much issue. However, the geospatial and D3.js portions were significantly 
+        more difficult. I typically expand my coding knowledge through a very granular bottom-up approach. Adapting to retrofit and rework 
+        is a new way of thinking about coding; a new muscle to stretch and work.
+    <br>
+    <br>        
+        Despite my coding difficulties, I was proud of my chart choices. I am primarily a verbal storyteller, so expanding my vocabulary 
+        into visual storytelling was exciting, and difficult. I am particularly happy with the multiline chart as a stark representation of 
+        the difference in danger for various users of Chicago's streets. It did exactly what I hoped: acknowledged the massive number of 
+        car-on-car crashes, in juxtaposition with the far greater severity of car-on-person accidents. The rings were a space efficient 
+        proportion visualization that centered the viewer on each street's story without the bloat that 6 bar charts would have required 
+        to relay that in the same way. The map was both the crown jewel and greatest missed opportunity. Had I been able to collect and 
+        make use of bike lane data, I could have shown all the same information with the added dimension of how it intersects with the 
+        infrastructure we have in place. That said, I am very happy with the heatmapping effect that the map provides, as well as the 
+        striking discomfort in realizing that every single dot is a human being struck by several tons of speeding metal.
     </p>
   </div>
 

@@ -4,8 +4,8 @@ d3.json('rings_binned.json').then((data) => {
     }
   });
   
-  function createRing({ street, values, amount }) {
-    const height = 250,
+    function createRing({ street, values, amount }) {
+      const height = 250,
       width = 300,
       innerRadius = 35,
       outerRadius = 60,
@@ -24,7 +24,7 @@ d3.json('rings_binned.json').then((data) => {
       .attr("viewBox", [-width / 2, -height / 2, width, height]);
     
     let colors = ["#a6cee3","#1f78b4","#e31a1c"]
-    //let swatchHTML = Swatches(d3.scaleOrdinal(data,))
+
     svg.append("g")
       .attr("stroke", "white")
       .attr("stroke-width", 2)
@@ -43,13 +43,14 @@ d3.json('rings_binned.json').then((data) => {
       .data(arcs)
       .join("text")
       .attr("transform", d => `translate(${arcLabel.centroid(d)})`)
+      .attr('dy', '1.4em')
       .selectAll("tspan")
       .data(d => {
-        return [d.data.category, d.data.amount];
+         return [d.data.category, d.data.amount];
       })
       .join("tspan")
       .attr("x", 0)
-      .attr("y", (d, i) => `${i * 1.1}em`)
+      .attr("y", (d, i) => `${i * 2.5}em`)
       .attr("font-weight", (d, i) => i ? null : "bold")
       .text(d => d);
   
@@ -67,6 +68,5 @@ d3.json('rings_binned.json').then((data) => {
       .attr("alignment-baseline", "middle")
       .attr('dy', '1.2em')
       .text(amount)
-
 
   }
