@@ -67,17 +67,6 @@
       .attr("font-weight", "bold")
       .attr("font-size", 13);
 
-    svg.append("text")
-      .attr("text-anchor", "end")
-      .attr("x", -135)
-      .attr("dx", "-0.5em")
-      .attr("y", 795)
-      .attr("transform", "rotate(-90)")
-      .text("1.0 = 1 death per incident")
-      .attr("font-weight", "bold")
-      .attr("font-size", 13);
-
-
     const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", 
       "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
